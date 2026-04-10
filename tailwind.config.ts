@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1775839983855699124.html"
 	],
 	prefix: "",
 	theme: {
@@ -70,25 +71,33 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					from: { opacity: '0', transform: 'translateY(8px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out both',
+			},
+			fontFamily: {
+				display: ['Cormorant Garamond', 'serif'],
+				body: ['Golos Text', 'sans-serif'],
+			},
+			colors: {
+				'cinema-bg': '#0d0d0f',
+				'cinema-surface': '#161618',
+				'cinema-gold': '#c9a84c',
+				'cinema-text': '#f0ece4',
+				'cinema-muted': '#6b6860',
 			}
 		}
 	},
