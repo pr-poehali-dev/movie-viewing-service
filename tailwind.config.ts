@@ -62,7 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'cinema-bg': '#0d0d0f',
+				'cinema-surface': '#161618',
+				'cinema-gold': '#c9a84c',
+				'cinema-text': '#f0ece4',
+				'cinema-muted': '#6b6860',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -91,13 +96,6 @@ export default {
 			fontFamily: {
 				display: ['Cormorant Garamond', 'serif'],
 				body: ['Golos Text', 'sans-serif'],
-			},
-			colors: {
-				'cinema-bg': '#0d0d0f',
-				'cinema-surface': '#161618',
-				'cinema-gold': '#c9a84c',
-				'cinema-text': '#f0ece4',
-				'cinema-muted': '#6b6860',
 			}
 		}
 	},
